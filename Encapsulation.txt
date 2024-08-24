@@ -1,0 +1,422 @@
+instance variable :first way constant 
+
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+//
+class A {
+    int a = 15, b = 56;
+
+    void add() {
+        int c = a + b;
+        System.out.println("Add: "+c);
+    }
+    void sub(){
+        int c = a-b;
+        System.out.println("Sub: "+c);
+    }
+    void multi(){
+        int c = a*b;
+        System.out.println("Multi: "+c);
+    }
+    void div(){
+        int c = a/b;
+        System.out.println("Div: "+c);
+    }
+    void mod(){
+        int c = a%b;
+        System.out.println("Mod: "+c);
+    }
+}
+class Oops{
+   public static void main(String[] args) {
+        A p = new A();
+        p.add();
+        p.sub();
+        p.multi();
+        p.div();
+        p.mod();
+    }
+}
+//
+Add: 71
+Sub: -41  
+Multi: 840
+Div: 0    
+Mod: 15
+------------------------------------------------------
+instance variable : second way  constant  
+
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+//
+class A {
+    int a, b;
+    void add(int k, int j) {
+        a = k;
+        b = j;
+        System.out.println("Add: "+(a+b));
+    }
+    void sub(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Sub: "+(a-b));
+    }
+    void multi(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Multi: "+(a*b));
+    }
+    void div(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Div: "+(a/b));
+    }
+    void mod(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Mod: "+(a%b));
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        A p = new A();
+        p.add(11,15);
+        p.sub(15,5);
+        p.multi(20,5);
+        p.div(120,3);
+        p.mod(10,3);
+    }
+}
+//
+Add: 26
+Sub: 10
+Multi: 100
+Div: 40
+Mod: 1
+----------------------------------------------------------
+instance variable : third way  constant  
+
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+
+Main class access
+//
+import java.util.*;
+class A {
+    int a, b;
+    void add(int k, int j) {
+        a = k;
+        b = j;
+        System.out.println("Add: "+(a+b));
+    }
+    void sub(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Sub: "+(a-b));
+    }
+    void multi(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Multi: "+(a*b));
+    }
+    void div(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Div: "+(a/b));
+    }
+    void mod(int k,int j){
+        a = k;
+        b = j;
+        System.out.println("Mod: "+(a%b));
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        A p = new A();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        p.add(a,b);
+        p.sub(a,b);
+        p.multi(a,b);
+        p.div(a,b);
+        p.mod(a,b);
+    }
+}
+//
+Add: 15
+Sub: 5
+Multi: 50
+Div: 2
+Mod: 0
+----------------------------------------------------------
+instance variable : third way  constant  
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+Main class access
+//
+class A {
+    int a, b;
+    void add(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println("Add: "+(a+b));
+    }
+    void sub(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Sub: "+(a-b));
+    }
+    void multi(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Multi: "+(a*b));
+    }
+    void div(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Div: "+(a/b));
+    }
+    void mod(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Mod: "+(a%b));
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        A p = new A();
+        p.add(15,16);
+        p.sub(15,7);
+        p.multi(40,6);
+        p.div(45,5);
+        p.mod(10,4);
+    }
+}
+//
+Add: 31
+Sub: 8
+Multi: 240
+Div: 9
+Mod: 2
+-------------------------------------------------
+instance variable :third way user input  	
+add() : two number addition 
+sub()
+div()
+multi() 
+mod() 
+Main class access
+//
+import java.util.*;
+class A {
+    int a, b;
+    void add(int a, int b) {
+        this.a = a;
+        this.b = b;
+        System.out.println("Add: "+(a+b));
+    }
+    void sub(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Sub: "+(a-b));
+    }
+    void multi(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Multi: "+(a*b));
+    }
+    void div(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Div: "+(a/b));
+    }
+    void mod(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Mod: "+(a%b));
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        A p = new A();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        p.add(a,b);
+        p.sub(a,b);
+        p.multi(a,b);
+        p.div(a,b);
+        p.mod(a,b);
+    }
+}
+//
+Add: 30
+Sub: 10
+Multi: 200
+Div: 2
+Mod: 0
+------------------------------------------------------
+Employe :class First way
+instance variable 
+empname
+efather
+eaddress
+edepartment 
+esalary 
+econtact
+want to print all the data through three ways 
+//
+class Employee {
+    String empName = "ABC";
+    String eFather = "XYZ";
+    String eAddress = "abc sector-4";
+    String eDepartment = "IT";
+    long esalary = 35000;
+    long eContact=6512345678l;
+    void display(){
+        
+        System.out.println("----------x----------");
+        System.out.println("Name: "+empName+"\nFather's Name: "+eFather+"\nAddress: "+eAddress+
+        "\nDepartMent: "+eDepartment+"\nSalary: "+esalary+"\nContact: "+eContact);
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        Employee p = new Employee();
+        p.display();
+    }
+}
+//
+Name: ABC
+Father's Name: XYZ
+Address: abc sector-4
+DepartMent: IT
+Salary: 35000
+Contact: 6512345678
+------------------------------------------------------------------------
+Employe :classSecond way
+instance variable 
+empname
+efather
+eaddress
+edepartment 
+esalary 
+econtact
+want to print all the data through three ways 
+//
+class Employee {
+    String empName ;
+    String eFather ;
+    String eAddress;
+    String eDepartment ;
+    int esalary ;
+    long eContact;
+    void display(String empn,String fathername,String address,String department,int salary,long contact){
+        empName=empn;
+        eFather=fathername;
+        eAddress = address;
+        eDepartment=department;
+        esalary=salary;
+        eContact = contact;
+
+        System.out.println("----------x----------");
+        System.out.println("Name: "+empName+"\nFather's Name: "+eFather+"\nAddress: "+eAddress+
+        "\nDepartMent: "+eDepartment+"\nSalary: "+esalary+"\nContact: "+eContact);
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        Employee p = new Employee();
+        p.display("XYZ","ABC","abc sector-7","IT",35000,1234567890);
+    }
+}
+//
+Name: XYZ
+Father's Name: ABC
+Address: abc sector-7
+DepartMent: IT
+Salary: 35000
+Contact: 1234567890
+----------------------------------------------------------------------
+Employe :classthird way
+instance variable 
+empname
+efather
+eaddress
+edepartment 
+esalary 
+econtact
+want to print all the data through three ways  
+//
+import java.util.*;
+class Employee {
+    String empName;
+    String eFather;
+    String eAddress;
+    String eDepartment;
+    int esalary;
+    int eContact;
+    void display(String empName , String eFather,String eAddress
+    ,String eDepartment,int esalary,long eContact){
+        this.empName = empName;
+        this.eFather=eFather;
+        this.eAddress=eAddress;
+        this.eDepartment=eDepartment;
+        this.esalary=esalary;
+        this.eContact=(int) eContact;
+        System.out.println("----------x----------");
+        System.out.println("Name: "+empName+"\nFather's Name: "+eFather+"\nAddress: "+eAddress+
+        "\nDepartMent: "+eDepartment+"\nSalary: "+esalary+"\nContact: "+eContact);
+    }
+}
+
+class Oops{
+   public static void main(String[] args) {
+        Employee p = new Employee();
+        Scanner sc = new Scanner(System.in);
+        String empName = sc.nextLine();
+        String eFather = sc.nextLine();
+        String eAddress = sc.nextLine();
+        String eDepartment = sc.nextLine();
+        int esalary = sc.nextInt();
+        long eContact = sc.nextLong();
+        p.display(empName, eFather, eAddress, eDepartment, esalary, eContact);
+    }
+}
+//
+lokesh
+k  
+ssas
+sasa
+15200
+7610925010
+----------x----------
+Name: lokesh
+Father's Name: k
+Address: ssas
+DepartMent: sasa
+Salary: 15200
+Contact: 7610925010

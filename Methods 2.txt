@@ -1,0 +1,930 @@
+return and no argument 
+return : int | char | float ...primitive data type as return type 
+	String 
+//
+
+class A{
+    boolean istrue(){
+        boolean b = true;
+        return b;
+        }
+        char show1(){
+            char c = 'L';
+            return c;
+        }
+        byte show2(){
+            byte by = 18;
+             return by;
+        }
+        short show3(){
+            short s = 10086;
+            return s;
+        }
+    int show(){
+        int a = 220000;
+        return a;
+    }
+    long show4(){
+        long l = 60080304495004l;
+        return l;
+    }
+    float show5(){
+        float f = 26.23f;
+        return f;
+    }
+    double showDouble(){
+        double d = 489535.8;
+        return d;
+    }
+}
+public class Oops{
+    public static void main(String[] args) {
+        A obj = new A();
+        System.out.println("boolean: "+obj.istrue());
+        System.out.println("char: "+obj.show1());
+        System.out.println("byte: "+obj.show2());
+        System.out.println("short: "+obj.show3());
+        System.out.println("int: "+obj.show());
+        System.out.println("long: "+obj.show4());
+        System.out.println("float: "+obj.show5());
+        System.out.println("double: "+obj.showDouble());
+    }
+}
+//
+char: L
+byte: 18
+short: 10086
+int: 220000
+long: 60080304495004
+float: 26.23
+double: 489535.8
+-----------------------------------------------------------
+single class class A
+
+add()
+sub()
+multi()
+div()
+mod()
+
+classMain :
+access method
+//
+class A{
+    int add(){
+        int a = 50,b=30;
+        return a+b;
+    }
+    int sub(){
+        int a = 35,b=10;
+        return a-b;
+    }
+    int multi(){
+        int a = 10,b=10;
+        return a*b;
+    }
+    int div(){
+        int a = 60,b=30;
+        return a/b;
+    }
+    int mod(){
+        int a = 20,b=3;
+        return a%b;
+    }
+}
+public class Oops{
+    public static void main(String[] args){
+        A ob = new A();
+        System.out.println("Add: "+ob.add());
+        System.out.println("Sub: "+ob.sub());
+        System.out.println("Multi: "+ob.multi());
+        System.out.println("Div: "+ob.div());
+        System.out.println("Mod: "+ob.mod());
+    }
+}//
+Add: 80
+Sub: 25
+Multi: 100
+Div: 2
+Mod: 2
+-----------------------------------------------------------
+ class A
+add()
+
+class B 
+sub()
+
+class C
+multi()
+
+class D
+div()
+
+class Main 
+mod()
+access method 
+//
+class A{
+    int add(){
+        int a = 20,b=30;
+        return a+b;
+    }
+}
+class B{
+    int sub(){
+        int a = 50,b=30;
+        return a-b;
+    }
+}
+class C{
+    int multi(){
+        int a = 20,b=30;
+        return a*b;
+    }
+}
+class D{
+    int div(){
+        int a = 60,b=30;
+        return a/b;
+    }
+}
+public class Oops{
+    int mod(){
+        int a = 20,b=3;
+        return a%b;
+    }
+    public static void main(String[] args){
+        A ob = new A();
+        System.out.println("Add: "+ob.add());
+        B ob1 = new B();
+        System.out.println("Sub: "+ob1.sub());
+        C c1 = new C();
+        System.out.println("Multi: "+c1.multi());
+        D d1 = new D();
+        System.out.println("Div: "+d1.div());
+        Oops m = new Oops();
+        System.out.println("Mod: "+m.mod());
+    }
+}
+///
+Add: 50
+Sub: 20
+Multi: 600
+Div: 2
+Mod: 2
+------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+
+//
+public class Oops{
+    boolean neon(){
+        int num = 9,ans = 0;
+        int sq = num*num;
+        while (sq>0) {
+            int a = sq%10;
+            ans = ans+a;
+            sq/=10;
+        }
+        if(ans == num){
+            return true;
+        }else{
+           return false;
+        }
+    }
+    boolean prime(){
+        int num = 7,a=2,count=0;
+        while(num>a){
+            if(num%a==0){
+                count++;
+                break;
+            }
+            a++;
+        }
+        if(count==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    boolean perfect(){
+        int num = 6,a = 1,ans=0;
+        while(num>a){
+            if(num%a==0){
+                ans = ans+a;
+            }
+            a++;
+        }
+        if(ans==num){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    boolean armstrong()
+    {
+        int num = 370,ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans+a*a*a;
+            num/=10;
+        }
+        if(ans == temp){
+           return true;
+        }else{
+            return false;
+        }
+    }
+    boolean palindrome(){
+        int num = 370,ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans*10+a;
+            num/=10;
+        }
+        if(temp==ans){
+           return true;
+        }else{
+            return false;
+        }
+    }
+    int factorial(){
+        int num = 5,fact=1;
+        for(int i=num;i>=1;i--){
+            fact = fact*i;
+        }
+        return fact;
+    }
+    int fibonacci(){
+        int num=5,a=0,b=1;
+        System.out.print(a+" "+b+" ");
+        for(int i = 1;i<=num;i++){
+            int c = a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+        return 0;
+    } 
+    public static void main(String[] args){
+        
+        Oops m = new Oops();
+        System.out.println("number is neon: "+m.neon());
+        System.out.println("number is prime: "+m.prime());
+        System.out.println("number is perfect: "+m.perfect());
+        System.out.println("number is armstrong: "+m.armstrong());
+        System.out.println("number is palindrome: "+m.palindrome());
+        System.out.println("factorial is: "+m.factorial());
+        m.fibonacci();
+
+
+    }
+}
+//
+number is neon: true
+number is prime: true
+number is perfect: true
+number is armstrong: true
+number is palindrome: false
+factorial is: 120
+0 1 1 2 3 5 8 
+------------------------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+enter string 
+
+neon :neon method call
+//
+import java.util.Scanner;
+public class Oops{
+    public static void main(String[] args){ 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter String: ");
+        String name = sc.next();
+        Oops m = new Oops();
+        if(name.equals("neon")){
+            System.out.println("neon number: "+m.neon());
+        }
+        else if(name.equals("prime")){
+            System.out.println("prime number: "+m.prime());
+        }
+        else if(name.equals("perfect")){
+            System.out.println("perfect number: "+m.perfect());
+        }
+        else if(name.equals("armstrong")){
+            System.out.println("armstrong number: "+m.armstrong());
+        }
+        else if(name.equals("palindrome")){
+            System.out.println("palindrome number: "+m.palindrome());
+        }
+        else if(name.equals("factorial")){
+            System.out.println("factorial is: "+m.factorial());
+        }
+        else if(name.equals("fibonacci")){
+            m.fibonacci();
+        }
+        else
+           System.out.println("Invalid Choice");               
+     }
+          boolean neon(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int ans = 0;
+             int sq = num*num;
+             while(sq>0) {
+                 int a = sq%10;
+                 ans = ans+a;
+                 sq/=10;
+             }
+             if(ans == num){
+                 return true;
+             }else{
+                 return false;
+             }
+         }
+         boolean prime(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int a=2,count=0;
+             while(num>a){
+                 if(num%a==0){
+                     count++;
+                     break;
+                 }
+                 a++;
+             }
+             if(count==0){
+                 return true;
+             }else{
+                 return true;
+             }
+         }
+         boolean perfect(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int a = 1,ans=0;
+             while(num>a){
+                 if(num%a==0){
+                     ans = ans+a;
+                 }
+                 a++;
+             }
+             if(ans==num){
+                return true;
+             }else{
+                 return false;
+             }
+         }
+         boolean armstrong(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int ans=0;
+             int temp = num;
+             while(num>0){
+                 int a = num%10;
+                 ans = ans+a*a*a;
+                 num/=10;
+             }
+             if(ans == temp){
+                 return true;
+             }else{
+                 return false;
+             }
+         }
+         boolean palindrome(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int ans=0;
+             int temp = num;
+             while(num>0){
+                 int a = num%10;
+                 ans = ans*10+a;
+                 num/=10;
+             }
+             if(temp==ans){
+                 return true;
+             }else{
+                 return false;
+             }
+         }
+         int factorial(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int fact=1;
+             for(int i=num;i>=1;i--){
+                 fact = fact*i;
+             }
+             return fact;
+         }
+         int fibonacci(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+             int a=0,b=1;
+             System.out.print(a+" "+b+" ");
+             for(int i = 1;i<=num;i++){
+                 int c = a+b;
+                 System.out.print(c+" ");
+                 a=b;
+                 b=c;
+             }
+             return 0;
+    }
+}
+
+//
+Enter String: neon
+9
+neon number: true
+PS C:\Users\Owner\OneDrive\Desktop\java> java Oops
+Enter String: armstrong
+153
+armstrong number: true
+----------------------------------------------------------------------
+covariant return type : 
+
+ class A
+add()
+
+class B 
+sub()
+
+class C
+multi()
+
+class D
+div()
+
+class Main 
+mod()
+access method 
+//
+import java.util.Scanner;
+class A{
+    A add(int a,int b){
+        System.out.println("Add: "+(a+b));
+        return this;
+    }
+}
+class B{
+    B sub(int a,int b){
+        System.out.println("Sub: "+(a-b));
+        return this;
+    }
+}
+class C{
+    C multi(int a,int b){
+        System.out.println("Multi: "+(a*b));
+        return this;
+    }
+}
+class D{
+    D div(int a,int b){
+        System.out.println("Div: "+(a/b));
+        return this;
+    }
+}
+public class Oops{
+    public static void main(String[] args){
+        A a1 = new A();
+        a1.add(6,7);
+        B b1 = new B();
+        b1.sub(70, 30);
+        C c1 = new C();
+        c1.multi(5, 20);
+        D d1 = new D();
+        d1.div(20, 4);
+        Oops m = new Oops();
+        m.mod(33,2);
+    }
+    Oops mod(int a,int b){
+        System.out.println("Mod: "+(a%b));
+        return this;
+    }
+}
+//
+Add: 13
+Sub: 40
+Multi: 100
+Div: 5
+Mod: 1
+--------------------------------------------------------
+return and argument 
+
+return and no argument 
+return : int | char | float ...primitive data type as return type 
+	String 
+//
+import java.util.Scanner;
+class A{
+    boolean istrue(boolean b){ 
+        return b;
+        }
+        char show1(char c){ 
+            return c;
+        }
+        byte show2(byte by){
+             return by;
+        }
+        short show3(short s){
+            return s;
+        }
+    int show( int a){
+        return a;
+    }
+    long show4(long l){
+        return l;
+    }
+    float show5( float f){
+        return f;
+    }
+    double showDouble(double d ){
+        return d;
+    }
+}
+public class Oops{
+    public static void main(String[] args){
+        A obj = new A();
+        System.out.println("boolean: "+obj.istrue(true));
+        System.out.println("char: "+obj.show1('A'));
+        System.out.println("byte: "+obj.show2(10));
+        System.out.println("short: "+obj.show3(10000));
+        System.out.println("int: "+obj.show(2000000000));
+        System.out.println("long: "+obj.show4(45438538238l));
+        System.out.println("float: "+obj.show5(3.14f));
+        System.out.println("double: "+obj.showDouble(6383.5));
+    }
+}
+----------------------------------------------------------------
+single class class A
+
+add()
+sub()
+multi()
+div()
+mod()
+
+classMain :
+access method
+//
+class A{
+    int add(int a,int b){
+        return a+b;
+    }
+    int sub(int a,int b){
+        return a-b;
+    }
+    int multi(int a,int b){
+        return a*b;
+    }
+    int div(int a,int b){
+        return a/b;
+    }
+    int mod(int a,int b){
+        return a%b;
+    }
+}
+public class Oops{
+    public static void main(String[] args) {
+        A ob = new A();
+        System.out.println("Add: "+ob.add(22, 44));
+        System.out.println("sub: "+ob.sub(22, 10));
+        System.out.println("Multi: "+ob.multi(2, 5));
+        System.out.println("Div: "+ob.div(22, 2));
+        System.out.println("Mod: "+ob.mod(22, 3));
+    }
+}
+//
+Add: 66
+sub: 12
+Multi: 10
+Div: 11
+Mod: 1
+----------------------------------------------------------------------
+ class A
+add()
+
+class B 
+sub()
+
+class C
+multi()
+
+class D
+div()
+
+class Main 
+mod()
+access method 
+//
+class A{
+    int add(int a,int b){
+        return a+b;
+    }
+}   
+class B{
+    int sub(int a,int b){
+        return a-b;
+    }
+}
+class C{
+    int multi(int a,int b){
+        return a*b;
+    }
+}
+class D{
+    int div(int a,int b){
+        return a/b;
+    }
+}
+public class Oops{
+    public static void main(String[] args) {
+        A ob = new A();
+        System.out.println("Add: "+ob.add(22, 44));
+        B b1 = new B();
+        System.out.println("sub: "+b1.sub(22, 10));
+        C c1 = new C();
+        System.out.println("Multi: "+c1.multi(2, 5));
+        D d1 = new D();
+        System.out.println("Div: "+d1.div(22, 2));
+        Oops m = new Oops();
+        System.out.println("Mod: "+m.mod(22, 3));
+    }
+    int mod(int a,int b){
+        return a%b;
+    }
+}
+//
+Add: 66
+sub: 12
+Multi: 10
+Div: 11
+Mod: 1
+--------------------------------------------------------------
+public class Oops{
+    boolean neon(int num){
+        int ans = 0;
+        int sq = num*num;
+        while (sq>0) {
+            int a = sq%10;
+            ans = ans+a;
+            sq/=10;
+        }
+        if(ans == num){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    boolean prime(int num){
+        int a=2,count=0;
+        while(num>a){
+            if(num%a==0){
+                count++;
+                break;
+            }
+            a++;
+        }
+        if(count==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    boolean perfect(int num){
+        int a = 1,ans=0;
+        while(num>a){
+            if(num%a==0){
+                ans = ans+a;
+            }
+            a++;
+        }
+        if(ans==num){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    boolean armstrong(int num)
+    {
+        int ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans+a*a*a;
+            num/=10;
+        }
+        if(ans == temp){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    boolean palindrome(int num){
+        int ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans*10+a;
+            num/=10;
+        }
+        if(temp==ans){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    int factorial(int num){
+        int fact=1;
+        for(int i=num;i>=1;i--){
+            fact = fact*i;
+        }
+        return fact;
+    }
+    int fibonacci(int num){
+        int a=0,b=1;
+        System.out.print(a+" "+b+" ");
+        for(int i = 1;i<=num;i++){
+            int c = a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+        return 0;
+    }
+    public static void main(String[] args) {
+        Oops m = new Oops();
+        System.out.println("neon number: "+m.neon(9));
+        System.out.println("prime number: "+m.prime(11));
+        System.out.println("perfect number: "+m.perfect(6));
+        System.out.println("armstrong number: "+m.armstrong(370));
+        System.out.println("palindrome number: "+m.palindrome(121));
+        System.out.println("factorial number: "+m.factorial(5));
+        m.fibonacci(7);
+    }
+   
+}
+---------------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+enter string 
+
+neon :neon method call
+
+//
+import java.util.Scanner;
+public class Oops{
+    boolean neon(int num){
+         int ans = 0;
+         int sq = num*num;
+         while(sq>0) {
+             int a = sq%10;
+             ans = ans+a;
+             sq/=10;
+         }
+         if(ans == num){
+             return true;
+         }else{
+             return false;
+         }
+     }
+     boolean prime(int num){
+         int a=2,count=0;
+         while(num>a){
+             if(num%a==0){
+                 count++;
+                 break;
+             }
+             a++;
+         }
+         if(count==0){
+             return true;
+         }else{
+             return true;
+         }
+     }
+     boolean perfect(int num){
+         int a = 1,ans=0;
+         while(num>a){
+             if(num%a==0){
+                 ans = ans+a;
+             }
+             a++;
+         }
+         if(ans==num){
+            return true;
+         }else{
+             return false;
+         }
+     }
+     boolean armstrong(int num){
+         int ans=0;
+         int temp = num;
+         while(num>0){
+             int a = num%10;
+             ans = ans+a*a*a;
+             num/=10;
+         }
+         if(ans == temp){
+             return true;
+         }else{
+             return false;
+         }
+     }
+     boolean palindrome(int num){
+         int ans=0;
+         int temp = num;
+         while(num>0){
+             int a = num%10;
+             ans = ans*10+a;
+             num/=10;
+         }
+         if(temp==ans){
+             return true;
+         }else{
+             return false;
+         }
+     }
+     int factorial(int num){
+         int fact=1;
+         for(int i=num;i>=1;i--){
+             fact = fact*i;
+         }
+         return fact;
+     }
+     int fibonacci(int num){
+         int a=0,b=1;
+         System.out.print(a+" "+b+" ");
+         for(int i = 1;i<=num;i++){
+             int c = a+b;
+             System.out.print(c+" ");
+             a=b;
+             b=c;
+         }
+         return 0;
+}
+       public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter String: ");
+        String name = sc.next();
+        Oops m = new Oops();
+        if(name.equals("neon")){
+            int num = sc.nextInt();
+            System.out.println("neon number: "+m.neon(num));
+        }
+        else if(name.equals("prime")){
+            int num = sc.nextInt();
+            System.out.println("prime number: "+m.prime(num));
+        }
+        else if(name.equals("perfect")){
+            int num = sc.nextInt();
+            System.out.println("perfect number: "+m.perfect(num));
+        }
+        else if(name.equals("armstrong")){
+            int num = sc.nextInt();
+            System.out.println("armstrong number: "+m.armstrong(num));
+        }
+        else if(name.equals("palindrome")){
+            int num = sc.nextInt();
+            System.out.println("palindrome number: "+m.palindrome(num));
+        }
+        else if(name.equals("factorial")){
+            int num = sc.nextInt();
+            System.out.println("factorial is: "+m.factorial(num));
+        }
+        else if(name.equals("fibonacci")){
+            int num = sc.nextInt();
+            m.fibonacci(num);
+        }
+        else
+           System.out.println("Invalid Choice");               
+     }
+}

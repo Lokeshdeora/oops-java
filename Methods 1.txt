@@ -1,0 +1,798 @@
+single class class A
+
+add()
+sub()
+multi()
+div()
+mod()
+
+classMain :
+access method 
+//
+class A{
+    void add(){
+        int a=20;
+        int b=50;
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+    void sub(){
+        int a=50;
+        int b=20;
+        int c=a-b;
+        System.out.println("sub="+c);
+    }
+    void multi(){
+        int a=5;
+        int b=5;
+        int c=a*b;
+        System.out.println("multi="+c);
+    }
+    void divi(){
+        int a=30;
+        int b=5;
+        int c=a/b;
+        System.out.println("divi="+c);
+    }
+    void mod(){
+        int a=10;
+        int b=4;
+        int c=a%b;
+        System.out.println("mod="+c);
+    } 
+}
+public class Oops {
+public static void main(String[]args){
+    A p=new A();
+    p.add();
+    p.sub();
+    p.multi();
+    p.divi();
+    p.mod();
+
+}
+}
+//
+add=70
+sub=30
+multi=25
+divi=6
+mod=2
+---------------------------------------------------
+ class A
+add()
+
+class B 
+sub()
+
+class C
+multi()
+
+class D
+div()
+
+class Main 
+mod()
+access method 
+//
+
+class A{
+    void add(){
+        int a=40,b=60;
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+}
+class B{
+    void sub(){
+        int a=200,b=100;
+        int c=a-b;
+        System.out.println("sub="+c);
+    }
+}
+class C{
+    void multi(){
+        int a=20,b=20;
+        int c=a*b;
+        System.out.println("multi="+c);
+    }
+}
+class D{
+    void divi(){
+        int a=40,b=10;
+        int c=a/b;
+        System.out.println("divi="+c);
+
+    }
+}
+public class Oops {
+
+    public static void main(String[] args) {
+        A a1 = new A();
+        a1.add();
+        B b1 = new B();
+        b1.sub();
+        C c1 = new C();
+        c1.multi();
+        D d1 = new D();
+        d1.divi();
+        Oops m = new Oops();
+        m.mod();
+    }
+    void mod(){
+        int a=30,b=4;
+        int c=a%b;
+        System.out.println("mod="+c);
+    }
+    }
+
+//
+add=100
+sub=100
+multi=400
+divi=4
+mod=2
+---------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+//
+public class Oops{
+    public static void main(String[] args) {
+        Oops m = new Oops();
+        m.neon();
+        m.prime();
+        m.perfect();
+        m.armstrong();
+        m.palindrome();
+        m.factorial();
+        m.fibonacci();
+    }
+    void neon(){
+        int num = 9,ans = 0;
+        int sq = num*num;
+        while (sq>0) {
+            int a = sq%10;
+            ans = ans+a;
+            sq/=10;
+        }
+        if(ans == num){
+            System.out.println(num+" is neon number");
+        }else{
+            System.out.println(num+" is not neon number");
+        }
+    }
+    void prime(){
+        int num = 7,a=2,count=0;
+        while(num>a){
+            if(num%a==0){
+                count++;
+                break;
+            }
+            a++;
+        }
+        if(count==0){
+            System.out.println(num+" is Prime Number");
+        }else{
+            System.out.println(num+" is Not Prime Number");
+        }
+    }
+    void perfect(){
+        int num = 6,a = 1,ans=0;
+        while(num>a){
+            if(num%a==0){
+                ans = ans+a;
+            }
+            a++;
+        }
+        if(ans==num){
+            System.out.println(num+" is perfect number");
+        }else{
+            System.out.println(num+" is not perfect number");
+        }
+    }
+    void armstrong()
+    {
+        int num = 153,ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans+a*a*a;
+            num/=10;
+        }
+        if(ans == temp){
+            System.out.println(temp+" is armstrong number");
+        }else{
+            System.out.println(temp+" is not armstrong number");
+        }
+    }
+    void palindrome(){
+        int num = 370,ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans*10+a;
+            num/=10;
+        }
+        if(temp==ans){
+            System.out.println(temp+" is palindrome number");
+        }else{
+            System.out.println(temp+" is not palindrome number");
+        }
+    }
+    void factorial(){
+        int num = 5,fact=1;
+        for(int i=num;i>=1;i--){
+            fact = fact*i;
+        }
+        System.out.println("Factorial Of "+num+" is: "+fact);
+    }
+    void fibonacci(){
+        int num=5,a=0,b=1;
+        System.out.print(a+" "+b+" ");
+        for(int i = 1;i<=num;i++){
+            int c = a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+    }
+}
+//
+9 is neon number
+7 is Prime Number
+6 is perfect number
+153 is armstrong number
+370 is not palindrome number
+Factorial Of 5 is: 120
+0 1 1 2 3 5 8 
+------------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+enter string 
+
+neon :neon method call
+//
+import java.util.Scanner;
+public class Oops{
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter String: ");
+       String name = sc.next();
+       Oops m = new Oops();
+       if(name.equals("neon"))
+          m.neon();
+       else if(name.equals("prime"))
+          m.prime();
+       else if(name.equals("perfect"))
+          m.perfect();
+       else if(name.equals("armstrong"))
+          m.armstrong();
+       else if(name.equals("palindrome"))
+          m.palindrome();
+       else if(name.equals("factorial"))
+          m.factorial();
+       else if(name.equals("fibonacci"))
+          m.fibonacci();
+       else
+          System.out.println("Invalid Choice");               
+    }
+         void neon(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int ans = 0;
+            int sq = num*num;
+            while(sq>0) {
+                int a = sq%10;
+                ans = ans+a;
+                sq/=10;
+            }
+            if(ans == num){
+                System.out.println(num+" is neon number");
+            }else{
+                System.out.println(num+" is not neon number");
+            }
+        }
+        void prime(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int a=2,count=0;
+            while(num>a){
+                if(num%a==0){
+                    count++;
+                    break;
+                }
+                a++;
+            }
+            if(count==0){
+                System.out.println(num+" is Prime Number");
+            }else{
+                System.out.println(num+" is Not Prime Number");
+            }
+        }
+        void perfect(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int a = 1,ans=0;
+            while(num>a){
+                if(num%a==0){
+                    ans = ans+a;
+                }
+                a++;
+            }
+            if(ans==num){
+                System.out.println(num+" is perfect number");
+            }else{
+                System.out.println(num+" is not perfect number");
+            }
+        }
+        void armstrong()
+        {
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int ans=0;
+            int temp = num;
+            while(num>0){
+                int a = num%10;
+                ans = ans+a*a*a;
+                num/=10;
+            }
+            if(ans == temp){
+                System.out.println(temp+" is armstrong number");
+            }else{
+                System.out.println(temp+" is not armstrong number");
+            }
+        }
+        void palindrome(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int ans=0;
+            int temp = num;
+            while(num>0){
+                int a = num%10;
+                ans = ans*10+a;
+                num/=10;
+            }
+            if(temp==ans){
+                System.out.println(temp+" is palindrome number");
+            }else{
+                System.out.println(temp+" is not palindrome number");
+            }
+        }
+        void factorial(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int fact=1;
+            for(int i=num;i>=1;i--){
+                fact = fact*i;
+            }
+            System.out.println("Factorial Of "+num+" is: "+fact);
+        }
+        void fibonacci(){
+            Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            int a=0,b=1;
+            System.out.print(a+" "+b+" ");
+            for(int i = 1;i<=num;i++){
+                int c = a+b;
+                System.out.print(c+" ");
+                a=b;
+                b=c;
+            }
+    }
+//
+Enter String: prime
+7
+7 is Prime Number
+PS C:\Users\Owner\OneDrive\Desktop\java> java Oops
+Enter String: factorial
+5
+Factorial Of 5 is: 120
+-------------------------------------------------------------
+		no return and argument 
+
+
+single class class A
+
+add()
+sub()
+multi()
+div()
+mod()
+
+classMain :
+access method 
+//
+class A{
+    void add(int a,int b){
+        int c = a+b;
+        System.out.println("Add: "+c);
+    }
+    void sub(int a,int b){
+        int c = a-b;
+        System.out.println("Sub: "+c);
+    }
+    void multi(int a,int b){
+        int c = a*b;
+        System.out.println("Multi: "+c);
+    }
+    void div(int a,int b){
+        int c = a/b;
+        System.out.println("Div: "+c);
+    }
+    void mod(int a,int b){
+        int c=a%b;
+        System.out.println("Mod: "+c);
+    }
+}
+public class Oops{
+    public static void main(String[] args) {
+        A p = new A();
+        p.add(500,600);
+        p.sub(60,40);
+        p.multi(10,101);
+        p.div(52,2);
+        p.mod(100,9);
+    }
+}
+//
+Add: 1100
+Sub: 20
+Multi: 1010
+Div: 26
+Mod: 1
+------------------------------------------------------
+class A
+add()
+
+class B 
+sub()
+
+class C
+multi()
+
+class D
+div()
+
+class Main 
+mod()
+access method 
+//
+class A{
+    void add(int a,int b){
+        int c = a+b;
+        System.out.println("Add: "+c);
+    }
+}
+class B{
+    void sub(int a,int b){
+        int c = a-b;
+        System.out.println("sub: "+c);
+    }
+}
+class C{
+    void multi(int a,int b){
+        int c = a*b;
+        System.out.println("Multi: "+c);
+    }
+}
+class D{
+    void div(int a,int b){
+        int c = a/b;
+        System.out.println("Div: "+c);
+    }
+}
+public class Oops{
+    public static void main(String[] args) {
+        A a1 = new A();
+        a1.add(45,60);
+        B b1 = new B();
+        b1.sub(36,21);
+        C c1 = new C();
+        c1.multi(50,4);
+        D d1 = new D();
+        d1.div(70,5);
+        Oops m = new Oops();
+        m.mod(70,6);
+    }
+    void mod(int a,int b){
+        int c = a%b;
+        System.out.println("mod: "+c);
+    }
+}
+//
+Add: 105
+sub: 15
+Multi: 200
+Div: 14
+mod: 4
+-------------------------------------------------------------
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+//
+public class Oops{
+    public static void main(String[] args) {
+        Oops m = new Oops();
+        m.neon(9);
+        m.prime(13);
+        m.perfect(20);
+        m.armstrong(153);
+        m.palindrome(22322);
+        m.factorial(10);
+        m.fibonacci(6);
+    }
+    void neon(int num){
+        int ans = 0;
+        int sq = num*num;
+        while (sq>0) {
+            int a = sq%10;
+            ans = ans+a;
+            sq/=10;
+        }
+        if(ans == num){
+            System.out.println(num+" is neon number");
+        }else{
+            System.out.println(num+" is not neon number");
+        }
+    }
+    void prime(int num){
+        int a=2,count=0;
+        while(num>a){
+            if(num%a==0){
+                count++;
+                break;
+            }
+            a++;
+        }
+        if(count==0){
+            System.out.println(num+" is Prime Number");
+        }else{
+            System.out.println(num+" is Not Prime Number");
+        }
+    }
+    void perfect(int num){
+        int a = 1,ans=0;
+        while(num>a){
+            if(num%a==0){
+                ans = ans+a;
+            }
+            a++;
+        }
+        if(ans==num){
+            System.out.println(num+" is perfect number");
+        }else{
+            System.out.println(num+" is not perfect number");
+        }
+    }
+    void armstrong(int num)
+    {
+        int ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans+a*a*a;
+            num/=10;
+        }
+        if(ans == temp){
+            System.out.println(temp+" is armstrong number");
+        }else{
+            System.out.println(temp+" is not armstrong number");
+        }
+    }
+    void palindrome(int num){
+        int ans=0;
+        int temp = num;
+        while(num>0){
+            int a = num%10;
+            ans = ans*10+a;
+            num/=10;
+        }
+        if(temp==ans){
+            System.out.println(temp+" is palindrome number");
+        }else{
+            System.out.println(temp+" is not palindrome number");
+        }
+    }
+    void factorial(int num){
+        int fact=1;
+        for(int i=num;i>=1;i--){
+            fact = fact*i;
+        }
+        System.out.println("Factorial Of "+num+" is: "+fact);
+    }
+    void fibonacci(int num){
+        int a=0,b=1;
+        System.out.print(a+" "+b+" ");
+        for(int i = 1;i<=num;i++){
+            int c = a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+        }
+    }
+}
+//
+9 is neon number
+13 is Prime Number
+20 is not perfect number
+153 is armstrong number
+22322 is palindrome number
+Factorial Of 10 is: 3628800
+0 1 1 2 3 5 8 13
+---------------------------------------------------------------
+
+class Main 
+
+neon()
+prime()
+perfect()
+Armstrong()
+palindrome()
+factorial()
+Fibonacci()
+
+access method 
+enter string 
+
+neon :neon method call
+//
+import java.util.Scanner;
+public class Oops{
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.print("Enter String: ");
+       String name = sc.next();
+       Oops m = new Oops();
+       if(name.equals("neon")){
+           int num = sc.nextInt();
+           m.neon(num);
+       }
+       else if(name.equals("prime")){
+           int num = sc.nextInt();
+           m.prime(num);
+       }
+       else if(name.equals("perfect")){
+           int num = sc.nextInt();
+           m.perfect(num);
+       }
+       else if(name.equals("armstrong")){
+           int num = sc.nextInt();
+           m.armstrong(num);
+       }
+       else if(name.equals("palindrome")){
+           int num = sc.nextInt();
+           m.palindrome(num);
+       }
+       else if(name.equals("factorial")){
+           int num = sc.nextInt();
+           m.factorial(num);
+       }
+       else if(name.equals("fibonacci")){
+           int num = sc.nextInt();
+           m.fibonacci(num);
+       }
+       else
+          System.out.println("Invalid Choice");               
+    }
+         void neon(int num){
+            int ans = 0;
+            int sq = num*num;
+            while(sq>0) {
+                int a = sq%10;
+                ans = ans+a;
+                sq/=10;
+            }
+            if(ans == num){
+                System.out.println(num+" is neon number");
+            }else{
+                System.out.println(num+" is not neon number");
+            }
+        }
+        void prime(int num){
+            int a=2,count=0;
+            while(num>a){
+                if(num%a==0){
+                    count++;
+                    break;
+                }
+                a++;
+            }
+            if(count==0){
+                System.out.println(num+" is Prime Number");
+            }else{
+                System.out.println(num+" is Not Prime Number");
+            }
+        }
+        void perfect(int num){
+            int a = 1,ans=0;
+            while(num>a){
+                if(num%a==0){
+                    ans = ans+a;
+                }
+                a++;
+            }
+            if(ans==num){
+                System.out.println(num+" is perfect number");
+            }else{
+                System.out.println(num+" is not perfect number");
+            }
+        }
+        void armstrong(int num)
+        {
+            int ans=0;
+            int temp = num;
+            while(num>0){
+                int a = num%10;
+                ans = ans+a*a*a;
+                num/=10;
+            }
+            if(ans == temp){
+                System.out.println(temp+" is armstrong number");
+            }else{
+                System.out.println(temp+" is not armstrong number");
+            }
+        }
+        void palindrome(int num){
+            int ans=0;
+            int temp = num;
+            while(num>0){
+                int a = num%10;
+                ans = ans*10+a;
+                num/=10;
+            }
+            if(temp==ans){
+                System.out.println(temp+" is palindrome number");
+            }else{
+                System.out.println(temp+" is not palindrome number");
+            }
+        }
+        void factorial(int num){
+            int fact=1;
+            for(int i=num;i>=1;i--){
+                fact = fact*i;
+            }
+            System.out.println("Factorial Of "+num+" is: "+fact);
+        }
+        void fibonacci(int num){
+            int a=0,b=1;
+            System.out.print(a+" "+b+" ");
+            for(int i = 1;i<=num;i++){
+                int c = a+b;
+                System.out.print(c+" ");
+                a=b;
+                b=c;
+            }
+    }
+}
+//
+9 is neon number
+PS C:\Users\Owner\OneDrive\Desktop\java> java Oops
+Enter String: factorial
+9
+Factorial Of 9 is: 362880
