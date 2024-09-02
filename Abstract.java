@@ -1,47 +1,38 @@
-//abstract class 
-//	no return and no argument :abstract 
-//	no return and  argument :abstract 
-//	 return and no argument :abstract 
-//	 return and  argument :abstract 
-//	 covariant return type :abstract 
+//abstract class :
+//	no return and no argument : abstract method 
+//	no return and  argument :non abstract method
+//	 return and no argument : abstract method
+//	 return and  argument :non abstract method
+//
+//class B extends abstract class 
 
-//class extends abstract class 
 
-//Main classs 
+//class Main 
 //access
 abstract class A{
-    abstract void show();
-    abstract void disp(int a);
-    abstract int disp1();
-    abstract int disp2(int b);
-    abstract A show1();
+    A(String name){
+        System.out.println("Name: "+name);  
+    }
+    abstract int add();
+    abstract int sub(int a,int b);
 }
 class B extends A{
-    void show(){
-        System.out.println("Show Method");
+    B(){
+        super("Lokesh");
     }
-    void disp(int a){
-        System.out.println("a: "+a);
+    int add(){
+        int a = 20,b=20;
+        return a+b;
     }
-    int disp1(){
-        int a = 50;
-        return a;
-    }
-    int disp2(int b){
-        return b;
-    }
-    A show1(){
-        System.out.println("Covariant return type");
-        return this;
+    int sub(int a,int b){
+        return a-b;
     }
 }
 public class Abstract{
     public static void main(String[] args){
-        B obj = new B();
-        obj.show();
-        obj.disp(60);
-        System.out.println(obj.disp1());
-        System.out.println(obj.disp2(30));
-        obj.show1();
-    } 
+        B obj= new B();
+        System.out.println("Add: "+obj.add());
+        System.out.println("Sub: "+obj.sub(60, 40));
+
+    }
 }
