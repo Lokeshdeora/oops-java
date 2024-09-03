@@ -1,77 +1,42 @@
-//abstract class 
-//	no return and no argument :abstract 
+//abstract class :
+//	no return and no argument : abstract method 
+//	no return and  argument : abstract method
+//	 return and no argument : abstract method
+//	 return and  argument : abstract method
+//
+//class B extends abstract class 
 
-//abstract class 
-//	no return and  argument :abstract 
 
-//abstract class 
-//	 return and no argument :abstract 
-
-//abstract class 
-//	 return and  argument :abstract 		
-
-//abstract class 
-//	 covariant return type :abstract 
-
-//class extends abstract class 
-
-//Main classs 
-//access
-//single level inheritance
+//class Main 
+//access all the methods through refrence variable
 abstract class A{
-    abstract void show();
+    abstract void add();
+    abstract void sub(int a,int b);
+    abstract int multi();
+    abstract int divide(int a,int b);
 }
-class A1 extends A{
-    void show(){
-        System.out.println("Abstract Method show class A");
+class B extends A{
+    void add(){
+        int a = 50,b=60;
+        System.out.println("Addition: "+(a+b));
     }
-}
-abstract class B{
-    abstract void show(int a);
-}
-class B1 extends B{
-    void show(int a){
-        System.out.println("Abstract Method show class B "+a);
+    void sub(int a,int b){
+        System.out.println("Subtraction: "+(a-b));
     }
-}
-abstract class C{
-    abstract int display();
-}
-class C1 extends C{
-    int display(){
-        int a = 20;
-        return a;
+    int multi(){
+        int a=6,b=2;
+        return a*b;
     }
-}
-abstract class D{
-    abstract int display(int a);
-}
-class D1 extends D{
-    int display(int a){
-        return a;
-    }
-}
-abstract class E{
-    abstract E disp();
-}
-class E1 extends E{
-    E disp(){
-        System.out.println("Covariant return type");
-        return this;
+    int divide(int a,int b){
+        return a/b;
     }
 }
 public class Abstract1 {
     public static void main(String[] args) {
-        A1 a1 = new A1();
-        a1.show();
-        B1 b1= new B1();
-        b1.show(50);
-        C1 c1 = new C1();
-        System.out.println(c1.display());
-        D1 d1 = new D1();
-        System.out.println(d1.display(89));
-        E1 e1 = new E1();
-        e1.disp();
+        B obj = new B();
+        obj.add();
+        obj.sub(100,50);
+        System.out.println("Multiply: "+obj.multi());
+        System.out.println("Division: "+obj.divide(60, 5));
     }
 }
-
