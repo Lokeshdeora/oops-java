@@ -1,27 +1,13 @@
-//abstract class :
-//	constructor :constructor overloading  
-//	 return and no argument : abstract method
-//	 return and  argument : abstract method
-
-//class B extends abstract class 
-
-//class Main
 abstract class A{
-    A(){
-        System.out.println("abstract class Default Constructor");
-    }
     A(int a){
-        System.out.println("abstract class Parameterized Constructor "+a);
+        System.out.println("Parameterized Constructor in abstract class");
     }
     abstract int show();
     abstract int display(int a);
 }
 class B extends A{
     B(){
-        super();
-    }
-    B(int a){
-        super(10);
+        super(0);
     }
     int show(){
         System.out.println("abstract method with return & no argument");
@@ -30,13 +16,11 @@ class B extends A{
     int display(int a){
         return a;
     }
-}
-public class Abstract3 {
+}public class Abstract4 {
     public static void main(String[] args) {
         B b = new B();
-        new B(8);
         b.show();
         System.out.println("abstract method with return & with argument");
-        
     }
+    
 }
