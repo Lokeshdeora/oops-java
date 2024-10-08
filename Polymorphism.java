@@ -1,26 +1,42 @@
-//single level :constructor overlaoding 
-class A{
-    A(int id){
-        System.out.println("ID: "+id);
+//2. Design a class `Car` with properties like `model`, `year`, and `price`. 
+//Implement a method to compare two cars based on their price using method overriding.
+
+class Car{
+    String model;
+    int year;
+    int price;
+    Car(String model,int year,int price){
+        this.model=model;
+        this.year=year;
+        this.price=price;
     }
-    A(String name,long contact){
-        System.out.println("Name: "+name);
-        System.out.println("Contact: "+contact);
-    }
-}
-class B extends A{
-    B(int marks){
-        super(34);
-        System.out.println("Marks: "+marks);
-    }
-    B(String c){
-        super("Lokesh Deora",123456789);
-        System.out.println("Class: "+c);
+    void carDetails(){
+
     }
 }
-public class Polymorphism{
-public static void main(String[] args) {
-    new B(500);
-    new B("Bsc 3rd year");
+class MarutiSuzuki extends Car{
+    MarutiSuzuki(){
+        super("Swift", 2014, 700000);
+    }
+    void carDetails(){
+        System.out.println("<----Maruti Cars---->");
+        System.out.println("Model: "+model+"\nYear: "+year+"\nPrice: "+price);
+    }
 }
+class Tata extends Car{
+    Tata(){
+        super("Nexon",2020,800000);
+    }
+    void carDetails(){
+        System.out.println("<----Tata Cars---->");
+        System.out.println("Model: "+model+"\nYear: "+year+"\nPrice: "+price);
+    }
+}
+public class Polymorphism {
+    public static void main(String[] args) {
+        Car maruti = new MarutiSuzuki();
+        maruti.carDetails();
+        Car tata = new Tata();
+        tata.carDetails();
+    }
 }
